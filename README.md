@@ -1,7 +1,7 @@
 # Load_Async_Image
 This is a demo of loading image asynchronously in the grid. Also implemented pagination and error handling.
 
-- **Overview: **
+- **Overview**
 
   Develop an application for iOS to efficiently load and display images in a scrollable grid using the Unsplash API. You are not allowed to use any third-party image loading library.
 
@@ -12,11 +12,11 @@ This is a demo of loading image asynchronously in the grid. Also implemented pag
   - **Error Handling:** Handle network errors and image loading failures gracefully when fetching images from the API, providing informative error messages or   placeholders for failed image loads.
 
 **
-IDE: XCODE 12.0
-Machine: Macbook Pro (Mid 2012)
-OSX: MAC OS Catalina (10.15.7)
-iOS version: iOS 14 (tested on iOS 14)
-design pattern: MVVM
+- IDE: XCODE 12.0
+- Machine: Macbook Pro (Mid 2012)
+- OSX: MAC OS Catalina (10.15.7)
+- iOS version: iOS 14 (tested on iOS 14)
+- Design pattern: MVVM
 **
 
 To run this application first you need to register you self on [Unsplash.com](https://unsplash.com/developers) as a developer to get Access Key. Put that access key in constant.swift file in client id veriable else you will get an error.
