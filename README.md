@@ -11,13 +11,13 @@ This is a demo of loading image asynchronously in the grid. Also implemented pag
   - **Caching:** Develop a caching mechanism to store images retrieved from the API in memory and/or disk cache for efficient retrieval.
   - **Error Handling:** Handle network errors and image loading failures gracefully when fetching images from the API, providing informative error messages or   placeholders for failed image loads.
 
-**
+
 - IDE: XCODE 12.0
 - Machine: Macbook Pro (Mid 2012)
 - OSX: MAC OS Catalina (10.15.7)
 - iOS version: iOS 14 (tested on iOS 14)
 - Design pattern: MVVM
-**
+
 
 To run this application first you need to register you self on [Unsplash.com](https://unsplash.com/developers) as a developer to get Access Key. Put that access key in constant.swift file in client id veriable else you will get an error.
 
