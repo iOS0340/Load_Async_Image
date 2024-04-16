@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5h2-8h-t4u" customClass="ErrorView" customModule="async_image_load" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pM-Ik-hK5">
+                    <rect key="frame" x="372" y="8" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="13Q-ES-l5O"/>
+                        <constraint firstAttribute="height" constant="34" id="IJd-3j-LUM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal">
+                        <imageReference key="image" image="multiply.circle" catalog="system" symbolScale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="removeErrorViewFromSubviewWithSender:" destination="5h2-8h-t4u" eventType="touchUpInside" id="jie-t2-CzR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-0I-OZZ">
+                    <rect key="frame" x="8" y="0.0" width="356" height="50"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ZuL-Pc-GTD"/>
+            <color key="backgroundColor" red="0.69019607839999997" green="0.035294117649999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nf9-0I-OZZ" firstAttribute="bottom" secondItem="ZuL-Pc-GTD" secondAttribute="bottom" id="IzR-gu-qI4"/>
+                <constraint firstAttribute="trailing" secondItem="1pM-Ik-hK5" secondAttribute="trailing" constant="8" id="KxY-Do-K0u"/>
+                <constraint firstItem="ZuL-Pc-GTD" firstAttribute="bottom" secondItem="1pM-Ik-hK5" secondAttribute="bottom" constant="8" id="QTe-uy-znV"/>
+                <constraint firstItem="1pM-Ik-hK5" firstAttribute="top" secondItem="5h2-8h-t4u" secondAttribute="top" constant="8" id="ZX9-K3-UgJ"/>
+                <constraint firstItem="nf9-0I-OZZ" firstAttribute="top" secondItem="5h2-8h-t4u" secondAttribute="top" id="cRO-rB-zQi"/>
+                <constraint firstItem="1pM-Ik-hK5" firstAttribute="leading" secondItem="nf9-0I-OZZ" secondAttribute="trailing" constant="8" id="ojN-wZ-pNA"/>
+                <constraint firstItem="nf9-0I-OZZ" firstAttribute="leading" secondItem="ZuL-Pc-GTD" secondAttribute="leading" constant="8" id="rNl-4F-qPU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblMessage" destination="nf9-0I-OZZ" id="6S4-MD-8Ip"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="101.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="multiply.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
