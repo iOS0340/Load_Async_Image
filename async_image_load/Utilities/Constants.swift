@@ -9,7 +9,8 @@ import Foundation
 
 //  MARK: - API CONST
 
-let CLIENT_ID = "o7bvmX04qYOm43Okahw7jroC4zagxl2gONFmfKac7oU"
+// Add your accesskey
+let CLIENT_ID = ""
 let BASEURL = "https://api.unsplash.com/"
 let PHOTOS_END_POINT = "photos?client_id="
 let PER_PAGE_IMAGE_COUNT = 30
