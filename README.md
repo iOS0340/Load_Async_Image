@@ -15,7 +15,7 @@ This is a demo of loading image asynchronously in the grid. Also implemented pag
 - IDE: XCODE 12.0
 - Machine: Macbook Pro (Mid 2012)
 - OSX: MAC OS Catalina (10.15.7)
-- iOS version: iOS 14 (tested on iOS 14)
+- Deployment Target: iOS 14 (tested on iOS 14)
 - Design pattern: MVVM
 
 
